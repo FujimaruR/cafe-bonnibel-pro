@@ -1,0 +1,59 @@
+{
+    "sections": [
+        {
+            "title": "Bebidas Calientes",
+            "items": [
+                {
+                    "name": "Espresso sencillo",
+                    "desc": "Extracto intenso de la casa.",
+                    "price": 45
+                },
+                {
+                    "name": "Cappuccino",
+                    "desc": "Espuma sedosa, cacao espolvoreado.",
+                    "price": 65
+                },
+                {
+                    "name": "Latte de vainilla",
+                    "desc": "Vainilla natural y crema.",
+                    "price": 68
+                }
+            ]
+        },
+        {
+            "title": "Bebidas Frías",
+            "items": [
+                {
+                    "name": "Cold Brew",
+                    "desc": "12h de extracción en frío.",
+                    "price": 70
+                },
+                {
+                    "name": "Frappe de caramelo",
+                    "desc": "Dulce y refrescante.",
+                    "price": 78
+                }
+            ]
+        },
+        {
+            "title": "Panadería",
+            "items": [
+                {
+                    "name": "Concha de vainilla",
+                    "desc": "Masa madre, costra crujiente.",
+                    "price": 32
+                },
+                {
+                    "name": "Rol de canela",
+                    "desc": "Glaseado de queso crema.",
+                    "price": 42
+                },
+                {
+                    "name": "Brownie",
+                    "desc": "Cacao 70% y nuez.",
+                    "price": 39
+                }
+            ]
+        }
+    ]
+}

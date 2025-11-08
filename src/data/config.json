@@ -1,0 +1,15 @@
+{
+    "brand": "Café Bonnibel",
+    "tagline": "Café de origen, pan artesanal y momentos bonitos.",
+    "cta": {
+        "whatsapp": "+52 81 1892 5876",
+        "waMessage": "Hola, quiero hacer un pedido para llevar 😊"
+    },
+    "address": "Av. Dulce #123, Col. Encanto, Monterrey, NL",
+    "schedule": "Lun-Dom 8:00–22:00",
+    "map": "https://maps.google.com/?q=Cafe+Bonnibel",
+    "social": {
+        "instagram": "https://instagram.com/cafebonnibel",
+        "facebook": "https://facebook.com/cafebonnibel"
+    }
+}
