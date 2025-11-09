@@ -1,8 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import beans from '../assets/beans.svg';
 import config from '../data/config.json';
 
 
 export default function Hero() {
+    const navigate = useNavigate();
+
+    const handleMenu = () => {
+        navigate('/Menu');
+    };
+
+    const handleLocation = () => {
+        navigate('/Location');
+    };
+
     return (
         <section className="pt-28 md:pt-36 bg-gradient-to-b from-crema to-beige">
             <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
@@ -14,8 +25,8 @@ export default function Hero() {
                         {config.tagline}
                     </p>
                     <div className="mt-6 flex gap-3">
-                        <a href="#menu" className="px-5 py-3 rounded-xl bg-cafe text-crema">Ver menú</a>
-                        <a href="#ubicacion" className="px-5 py-3 rounded-xl border border-cafe/30 text-cafe">Cómo llegar</a>
+                        <a onClick={handleMenu} className="px-5 py-3 rounded-xl bg-cafe text-crema cursor-pointer">Ver menú</a>
+                        <a onClick={handleLocation} className="px-5 py-3 rounded-xl border border-cafe/30 text-cafe cursor-pointer">Cómo llegar</a>
                     </div>
                     <p className="mt-6 text-sm text-cafe/70">
                         {config.schedule} · {config.address}
