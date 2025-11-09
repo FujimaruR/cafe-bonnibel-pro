@@ -6,19 +6,19 @@
                 {
                     "name": "Espresso Sencillo",
                     "desc": "Extracto intenso de la casa.",
-                    "img": "/src/assets/products/espresso.png",
+                    "img": "/products/espresso.png",
                     "price": 45
                 },
                 {
                     "name": "Cappuccino",
                     "desc": "Espuma sedosa, cacao espolvoreado.",
-                    "img": "/src/assets/products/capuccino.png",
+                    "img": "/products/capuccino.png",
                     "price": 65
                 },
                 {
                     "name": "Latte de Vainilla",
                     "desc": "Vainilla natural y crema.",
-                    "img": "/src/assets/products/latte-vainilla.png",
+                    "img": "/products/latte-vainilla.png",
                     "price": 68
                 }
             ]
@@ -29,13 +29,13 @@
                 {
                     "name": "Cold Brew",
                     "desc": "12h de extracción en frío.",
-                    "img": "/src/assets/products/cold-brew.png",
+                    "img": "/products/cold-brew.png",
                     "price": 70
                 },
                 {
                     "name": "Frappe de Caramelo",
                     "desc": "Dulce y refrescante.",
-                    "img": "/src/assets/products/caramel-frappe.png",
+                    "img": "/products/caramel-frappe.png",
                     "price": 78
                 }
             ]
@@ -46,19 +46,19 @@
                 {
                     "name": "Concha de Vainilla",
                     "desc": "Masa madre, costra crujiente.",
-                    "img": "/src/assets/products/concha.png",
+                    "img": "/products/concha.png",
                     "price": 32
                 },
                 {
                     "name": "Rol de Canela",
                     "desc": "Glaseado de queso crema.",
-                    "img": "/src/assets/products/rollos-canela.png",
+                    "img": "/products/rollos-canela.png",
                     "price": 42
                 },
                 {
                     "name": "Brownie",
                     "desc": "Cacao 70% y nuez.",
-                    "img": "/src/assets/products/brownie.png",
+                    "img": "/products/brownie.png",
                     "price": 39
                 }
             ]
