@@ -5,7 +5,7 @@ import ContactUs from './pages/ContactUs';
 import Location from './pages/Location';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
-import Checkout from './pages/CheckOut';
+import CheckOut from './pages/CheckOut';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="Location" element={<Location />} />
           <Route path="Menu" element={<Menu />} />
           <Route path="Cart" element={<Cart />} />
-          <Route path="Checkout" element={<Checkout />} />
+          <Route path="CheckOut" element={<CheckOut />} />
         </Route>
       </Routes>
     </Router>
