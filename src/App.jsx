@@ -5,7 +5,7 @@ import ContactUs from './pages/ContactUs';
 import Location from './pages/Location';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
-import CheckOut from './pages/CheckOut';
+import CheckOut from './pages/Checkout';
 
 function App() {
   return (
