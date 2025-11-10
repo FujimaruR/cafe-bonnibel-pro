@@ -4,6 +4,8 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Location from './pages/Location';
 import Menu from './pages/Menu';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="Contact" element={<ContactUs />} />
           <Route path="Location" element={<Location />} />
           <Route path="Menu" element={<Menu />} />
+          <Route path="Cart" element={<Cart />} />
+          <Route path="Checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </Router>

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import config from '../data/config.json';
+import { useCart } from '../store/cart';
 
 export default function Navbar() {
   const [isTop, setIsTop] = useState(true);
   const [open, setOpen] = useState(false);
+  const count = useCart(s => s.count());
 
   const navigate = useNavigate();
 
@@ -26,6 +28,10 @@ export default function Navbar() {
 
   const handleContact = () => {
     navigate('/Contact');
+  };
+
+  const handleCarrito = () => {
+    navigate('/Cart');
   };
 
   useEffect(() => {
@@ -61,6 +67,14 @@ export default function Navbar() {
           <a onClick={handleMenu} className="px-3 py-2 rounded-xl text-cafe/80 cursor-pointer hover:text-cafe">Menú</a>
           <a onClick={handleLocation} className="px-3 py-2 rounded-xl text-cafe/80 cursor-pointer hover:text-cafe">Ubicación</a>
           <a onClick={handleContact} className="px-3 py-2 rounded-xl text-cafe/80 cursor-pointer hover:text-cafe">Contacto</a>
+          <a onClick={handleCarrito} className="relative px-3 py-2 rounded-xl border border-beige/60 cursor-pointer hover:border-cafe/40">
+            🛍
+            {count > 0 && (
+              <span className="absolute -top-2 -right-2 text-xs bg-cafe text-crema rounded-full px-2 py-0.5">
+                {count}
+              </span>
+            )}
+          </a>
           <a href={waHref} target="_blank" className="px-4 py-2 rounded-xl bg-cafe text-crema hover:opacity-95">WhatsApp</a>
         </div>
 
@@ -84,6 +98,14 @@ export default function Navbar() {
             {link('Menú', handleMenu)}
             {link('Ubicación', handleLocation)}
             {link('Contacto', handleContact)}
+            <a onClick={handleCarrito} className="relative px-3 py-2 rounded-xl border border-beige/60 cursor-pointer hover:border-cafe/40">
+              🛍
+              {count > 0 && (
+                <span className="absolute -top-2 -right-2 text-xs bg-cafe text-crema rounded-full px-2 py-0.5">
+                  {count}
+                </span>
+              )}
+            </a>
             <a
               href={waHref}
               target="_blank"

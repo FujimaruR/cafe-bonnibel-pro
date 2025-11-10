@@ -1,26 +1,28 @@
 import menu from '../data/menu.json';
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
+import { useCart } from '../store/cart';
 
 const tabs = [
   { key: 'calientes', label: 'Bebidas calientes', idx: 0 },
-  { key: 'frias',     label: 'Bebidas frías',      idx: 1 },
-  { key: 'pan',       label: 'Panadería',          idx: 2 },
+  { key: 'frias', label: 'Bebidas frías', idx: 1 },
+  { key: 'pan', label: 'Panadería', idx: 2 },
 ];
 
 // util para IDs amigables (usa la misma en MenuGrid)
 const slug = (s) =>
   s.toLowerCase()
-   .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-   .replace(/[^a-z0-9]+/g, '-')
-   .replace(/(^-|-$)/g, '');
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 
 export default function MenuPage() {
   const [search, setSearch] = useSearchParams();
   const location = useLocation();
+  const { add } = useCart();
 
   // lee parámetros de la URL
-  const tabParam  = search.get('tab')  || 'calientes';
+  const tabParam = search.get('tab') || 'calientes';
   const itemParam = search.get('item') || '';
 
   // pestaña activa
@@ -35,8 +37,8 @@ export default function MenuPage() {
   // mapeo secciones
   const sectionsMap = useMemo(() => ({
     calientes: menu.sections[0],
-    frias:     menu.sections[1],
-    pan:       menu.sections[2],
+    frias: menu.sections[1],
+    pan: menu.sections[2],
   }), []);
 
   const section = sectionsMap[active];
@@ -93,6 +95,12 @@ export default function MenuPage() {
                   <p className="text-sm text-cafe/70">{it.desc}</p>
                 </div>
                 <span className="text-cafe/90 font-bold">${it.price}</span>
+                <button
+                  onClick={() => add(it)}
+                  className="mt-3 px-3 py-1 rounded-lg bg-cafe text-crema hover:opacity-90"
+                >
+                  Agregar
+                </button>
               </div>
             </article>
           ))}
