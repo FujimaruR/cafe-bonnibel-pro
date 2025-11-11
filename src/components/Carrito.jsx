@@ -118,7 +118,7 @@ export default function CartComponent() {
                                     {/* Quitar (desktop) */}
                                     <button
                                         onClick={() => remove(p.name)}
-                                        className="hidden md:inline text-crema underline text-sm"
+                                        className="hidden md:inline text-crema text-sm"
                                     >
                                         Quitar
                                     </button>
@@ -128,7 +128,7 @@ export default function CartComponent() {
                                         <div className="font-semibold">{formatMXN(p.price * p.qty)}</div>
                                         <button
                                             onClick={() => remove(p.name)}
-                                            className="text-crema underline text-sm"
+                                            className="text-crema text-sm"
                                         >
                                             Quitar
                                         </button>
@@ -136,7 +136,7 @@ export default function CartComponent() {
                                 </div>
 
                             ))}
-                            <button onClick={clear} className="text-sm text-crema underline">
+                            <button onClick={clear} className="text-sm text-crema">
                                 Vaciar carrito
                             </button>
                         </div>
