@@ -1,0 +1,24 @@
+{
+  "paths": [
+    "/",
+    "/Landing",
+    "/landing",
+    "/About",
+    "/about",
+    "/Contact",
+    "/contact",
+    "/Location",
+    "/location",
+    "/Menu",
+    "/menu",
+    "/Cart",
+    "/cart",
+    "/CheckOut",
+    "/checkout"
+  ],
+  "forms": [
+    "demo-contact",
+    "checkout",
+    "pickup-order"
+  ]
+}

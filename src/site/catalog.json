@@ -1,0 +1,730 @@
+{
+  "language.label": {
+    "es": "Idioma",
+    "en": "Language"
+  },
+  "site.title": {
+    "es": "Café Bonnibel Pro",
+    "en": "Café Bonnibel Pro"
+  },
+  "site.description": {
+    "es": "Café Bonnibel Pro · Menú, ubicación y contacto.",
+    "en": "Café Bonnibel Pro · Menu, location and contact."
+  },
+  "text.2be3622fdc": {
+    "es": "Landing",
+    "en": "Landing"
+  },
+  "text.7af1ffcca6": {
+    "es": "Ubicación",
+    "en": "Location"
+  },
+  "text.e7d93450ac": {
+    "es": "Ver en Google Maps",
+    "en": "View on Google Maps"
+  },
+  "text.d8a53e1f6d": {
+    "es": "Contacto",
+    "en": "Contact"
+  },
+  "text.b336fc5587": {
+    "es": "WhatsApp",
+    "en": "WhatsApp"
+  },
+  "text.5721bbef40": {
+    "es": "Instagram",
+    "en": "Instagram"
+  },
+  "text.82da67b211": {
+    "es": "Facebook",
+    "en": "Facebook"
+  },
+  "text.280104d516": {
+    "es": ". Hecho con amor y buen café.",
+    "en": ". Made with love and good coffee."
+  },
+  "text.34d6aa1522": {
+    "es": "Ver menú",
+    "en": "View menu"
+  },
+  "text.2ca5a6f9a7": {
+    "es": "Cómo llegar",
+    "en": "Directions"
+  },
+  "text.3cf7c8d099": {
+    "es": "beans",
+    "en": "Coffee beans"
+  },
+  "text.48fb89f7ed": {
+    "es": "Tostado de la casa",
+    "en": "House roast"
+  },
+  "text.c7c06e9fff": {
+    "es": "Nuestro menú",
+    "en": "Our menu"
+  },
+  "text.17ea0a188c": {
+    "es": "Menú",
+    "en": "Menu"
+  },
+  "text.65748a7f83": {
+    "es": "Pedir por WhatsApp",
+    "en": "Order via WhatsApp"
+  },
+  "text.541ca344e9": {
+    "es": "Café de origen, pan artesanal y momentos bonitos.",
+    "en": "Single-origin coffee, artisan bread and beautiful moments."
+  },
+  "text.3906c7bf14": {
+    "es": "Lun-Dom 8:00–22:00",
+    "en": "Mon–Sun 8:00–22:00"
+  },
+  "text.c9dd54f274": {
+    "es": "Bebidas Calientes",
+    "en": "Hot drinks"
+  },
+  "text.098e527e33": {
+    "es": "Espresso Sencillo",
+    "en": "Single espresso"
+  },
+  "text.8d85097964": {
+    "es": "Extracto intenso de la casa.",
+    "en": "An intense house blend."
+  },
+  "text.d0f7b24e99": {
+    "es": "Cappuccino",
+    "en": "Cappuccino"
+  },
+  "text.376ff3720e": {
+    "es": "Espuma sedosa, cacao espolvoreado.",
+    "en": "Silky foam with a dusting of cocoa."
+  },
+  "text.3963528032": {
+    "es": "Latte de Vainilla",
+    "en": "Vanilla latte"
+  },
+  "text.b98c2d5904": {
+    "es": "Vainilla natural y crema.",
+    "en": "Natural vanilla and cream."
+  },
+  "text.017994f17f": {
+    "es": "Bebidas Frías",
+    "en": "Cold drinks"
+  },
+  "text.0d5f8a59c0": {
+    "es": "Cold Brew",
+    "en": "Cold Brew"
+  },
+  "text.48909926da": {
+    "es": "12h de extracción en frío.",
+    "en": "12-hour cold extraction."
+  },
+  "text.0c4b0e8a3b": {
+    "es": "Frappe de Caramelo",
+    "en": "Caramel frappe"
+  },
+  "text.14ca982ac0": {
+    "es": "Dulce y refrescante.",
+    "en": "Sweet and refreshing."
+  },
+  "text.bab2a82937": {
+    "es": "Panadería",
+    "en": "Bakery"
+  },
+  "text.f96b7d0973": {
+    "es": "Concha de Vainilla",
+    "en": "Vanilla concha"
+  },
+  "text.2d9cdb0ff1": {
+    "es": "Masa madre, costra crujiente.",
+    "en": "Sourdough with a crisp crust."
+  },
+  "text.e5f06bf85e": {
+    "es": "Rol de Canela",
+    "en": "Cinnamon roll"
+  },
+  "text.e8b34b4181": {
+    "es": "Glaseado de queso crema.",
+    "en": "Cream cheese icing."
+  },
+  "text.cc9e72f97b": {
+    "es": "Brownie",
+    "en": "Brownie"
+  },
+  "text.2760f1f4ca": {
+    "es": "Cacao 70% y nuez.",
+    "en": "70% cocoa and walnuts."
+  },
+  "text.6b21fb791a": {
+    "es": "About",
+    "en": "About"
+  },
+  "text.b37456c453": {
+    "es": "Contact",
+    "en": "Contact"
+  },
+  "text.d219c68101": {
+    "es": "Location",
+    "en": "Location"
+  },
+  "text.57f5f5efbc": {
+    "es": "Menu",
+    "en": "Menu"
+  },
+  "text.ed0a9b4a99": {
+    "es": "Lo que dicen nuestros clientes",
+    "en": "What our customers say"
+  },
+  "text.1d22c37934": {
+    "es": "Cada café es un momento para conectar. Estas son algunas opiniones reales de nuestra comunidad.",
+    "en": "Every coffee is a moment to connect. Here are some reviews from our community."
+  },
+  "text.df286f2760": {
+    "es": "“El mejor latte que he probado. El lugar es hermoso y tranquilo.”",
+    "en": "“The best latte I have tried. A beautiful, peaceful place.”"
+  },
+  "text.aa90b9c8a4": {
+    "es": "– Ana M.",
+    "en": "– Ana M."
+  },
+  "text.a5c5a44874": {
+    "es": "“El rol de canela está increíble. Volveré cada semana.”",
+    "en": "“The cinnamon roll is amazing. I will be back every week.”"
+  },
+  "text.ddb44bfccc": {
+    "es": "– Carlos R.",
+    "en": "– Carlos R."
+  },
+  "text.e86e750c5e": {
+    "es": "“Ambiente muy bonito para estudiar o trabajar.”",
+    "en": "“A lovely place to study or work.”"
+  },
+  "text.1c2186e976": {
+    "es": "– Laura G.",
+    "en": "– Laura G."
+  },
+  "text.5794298efb": {
+    "es": "Ver más reseñas en Google",
+    "en": "See more reviews on Google"
+  },
+  "text.3441bbb727": {
+    "es": "Bebidas calientes",
+    "en": "Hot drinks"
+  },
+  "text.0b7837ada5": {
+    "es": "Bebidas frías",
+    "en": "Cold drinks"
+  },
+  "text.e68491e91c": {
+    "es": "Nombre",
+    "en": "Name"
+  },
+  "text.f07e1b890b": {
+    "es": "Tu nombre",
+    "en": "Your name"
+  },
+  "text.98f00c3e0a": {
+    "es": "Correo",
+    "en": "Email"
+  },
+  "text.eb9e23efc4": {
+    "es": "Mensaje",
+    "en": "Message"
+  },
+  "text.cda56135ac": {
+    "es": "¿Cómo podemos ayudarte?",
+    "en": "How can we help you?"
+  },
+  "text.af6ee04096": {
+    "es": "Enviar por WhatsApp",
+    "en": "Send via WhatsApp"
+  },
+  "text.411bd9b198": {
+    "es": "Enviar (demo)",
+    "en": "Send (demo)"
+  },
+  "text.cf96d3c1f6": {
+    "es": "*Este formulario es de demostración. Podemos conectarlo a correo o a una función serverless si lo requieres.",
+    "en": "*This is a demonstration form. It can be connected to email or a serverless function if needed."
+  },
+  "text.b885e27ea9": {
+    "es": "Nuestro espacio",
+    "en": "Our space"
+  },
+  "text.d5e3f25d94": {
+    "es": "Un ambiente cálido pensado para disfrutar café con calma. Luz suave, madera natural y mesas para conversar o estudiar.",
+    "en": "A warm space for enjoying coffee at your own pace. Soft light, natural wood and tables for conversations or studying."
+  },
+  "text.63e7cb7598": {
+    "es": "Nuestra historia",
+    "en": "Our story"
+  },
+  "text.2660104da4": {
+    "es": "Nacimos con una idea simple: café de origen y pan artesanal, servidos con calma. Trabajamos con fincas locales y recetas de temporada.",
+    "en": "We started with a simple idea: single-origin coffee and artisan bread, served at an unhurried pace. We work with local farms and seasonal recipes."
+  },
+  "text.f811b4156f": {
+    "es": "Cada taza se tuesta y muele al momento. Nuestro espacio busca ser una pausa bonita en tu día.",
+    "en": "Each cup is freshly roasted and ground. Our space offers a pleasant pause in your day."
+  },
+  "text.7be0616ebd": {
+    "es": "Abrir en Google Maps",
+    "en": "Open in Google Maps"
+  },
+  "text.4a472d01a3": {
+    "es": "mapa",
+    "en": "Map"
+  },
+  "text.1078cf414b": {
+    "es": "lazy",
+    "en": "lazy"
+  },
+  "text.f4d4e9f64b": {
+    "es": "Sobre nosotros",
+    "en": "About us"
+  },
+  "text.256a5c2ab3": {
+    "es": "Abrir menú",
+    "en": "Open menu"
+  },
+  "text.71f8e7976e": {
+    "es": "none",
+    "en": "none"
+  },
+  "text.47807b5026": {
+    "es": "M4 7h16M4 12h16M4 17h16",
+    "en": "M4 7h16M4 12h16M4 17h16"
+  },
+  "text.2e71b65d0c": {
+    "es": "currentColor",
+    "en": "currentColor"
+  },
+  "text.f0590a6dd3": {
+    "es": "round",
+    "en": "round"
+  },
+  "text.4465682049": {
+    "es": "Cart",
+    "en": "Cart"
+  },
+  "text.21f2a624fc": {
+    "es": "CheckOut",
+    "en": "CheckOut"
+  },
+  "text.9d916f441b": {
+    "es": "No se pudo iniciar el pago con Mercado Pago.",
+    "en": "Could not start the Mercado Pago payment."
+  },
+  "text.2ea49ec636": {
+    "es": "Error al iniciar pago.",
+    "en": "Error starting payment."
+  },
+  "text.a7349b7cad": {
+    "es": "Tu carrito",
+    "en": "Your cart"
+  },
+  "text.2fb3ff8daa": {
+    "es": "Aún no has agregado productos.",
+    "en": "You have not added any products yet."
+  },
+  "text.707b8df477": {
+    "es": "c/u",
+    "en": "each"
+  },
+  "text.be78bcf6d4": {
+    "es": "Quitar",
+    "en": "Remove"
+  },
+  "text.4718b2bda9": {
+    "es": "Vaciar carrito",
+    "en": "Empty cart"
+  },
+  "text.35414e5322": {
+    "es": "Resumen",
+    "en": "Summary"
+  },
+  "text.62b2db5e67": {
+    "es": "¿Cómo lo quieres?",
+    "en": "How would you like your order?"
+  },
+  "text.fd86fa3241": {
+    "es": "Envío a domicilio",
+    "en": "Home delivery"
+  },
+  "text.65e618348b": {
+    "es": "Recoger en tienda",
+    "en": "Store pickup"
+  },
+  "text.e47d5b93f3": {
+    "es": "Recoge en:",
+    "en": "Pick up at:"
+  },
+  "text.a337bd4f46": {
+    "es": "Av. Dulce #123, Col. Encanto, Monterrey",
+    "en": "Av. Dulce #123, Col. Encanto, Monterrey"
+  },
+  "text.27b6e17400": {
+    "es": ". Te avisaremos cuando esté listo.",
+    "en": ". We will let you know when it is ready."
+  },
+  "text.97f7359ed8": {
+    "es": "Subtotal",
+    "en": "Subtotal"
+  },
+  "text.3bc2689ca4": {
+    "es": "Envío",
+    "en": "Delivery"
+  },
+  "text.05c52b0d0e": {
+    "es": "No aplica",
+    "en": "Not applicable"
+  },
+  "text.df331f44f7": {
+    "es": "Se calcula en checkout",
+    "en": "Calculated at checkout"
+  },
+  "text.b25928c699": {
+    "es": "Total",
+    "en": "Total"
+  },
+  "text.f8333fd8df": {
+    "es": "Creando pago…",
+    "en": "Creating payment…"
+  },
+  "text.a16e03ddcd": {
+    "es": "Pagar con Mercado Pago",
+    "en": "Pay with Mercado Pago"
+  },
+  "text.4da14ab3af": {
+    "es": "Continuar al pago",
+    "en": "Continue to payment"
+  },
+  "text.fe6a1586a5": {
+    "es": "No se pudo iniciar el pago.",
+    "en": "Could not start payment."
+  },
+  "text.3ac8e9e58c": {
+    "es": "Finalizar pedido",
+    "en": "Checkout"
+  },
+  "text.cccece8229": {
+    "es": "Nombre completo",
+    "en": "Full name"
+  },
+  "text.99af3763e0": {
+    "es": "Teléfono",
+    "en": "Phone"
+  },
+  "text.2bc457c422": {
+    "es": "Dirección de entrega",
+    "en": "Delivery address"
+  },
+  "text.702c673606": {
+    "es": "Tu pedido",
+    "en": "Your order"
+  },
+  "text.87ebeeddda": {
+    "es": "Agregar",
+    "en": "Add"
+  },
+  "text.3ea17eaef1": {
+    "es": "agregado al carrito",
+    "en": "added to cart"
+  },
+  "text.8ad0d41a59": {
+    "es": "Hola, quisiera un desarrollo.",
+    "en": "Hi, I would like to discuss a development project."
+  },
+  "text.cc6dad78b6": {
+    "es": "cafe-bonnibel-cart",
+    "en": "cafe-bonnibel-cart"
+  },
+  "text.0c39e66b4e": {
+    "es": "Error cargando datos",
+    "en": "Could not load data"
+  },
+  "text.0538bd1331": {
+    "es": "No se pudo crear la orden",
+    "en": "Could not create the order"
+  },
+  "text.d5d91a501e": {
+    "es": "Error cargando dashboard",
+    "en": "Could not load the dashboard"
+  },
+  "text.e3a07dc540": {
+    "es": "Error cargando tablero",
+    "en": "Could not load the board"
+  },
+  "text.f2c33ecade": {
+    "es": "Error cargando órdenes",
+    "en": "Could not load orders"
+  },
+  "text.0fbc78e504": {
+    "es": "No se pudo actualizar el estatus",
+    "en": "Could not update the status"
+  },
+  "text.96bb80ab80": {
+    "es": "IN_PREPARATION",
+    "en": "Preparing"
+  },
+  "text.0a7b38b716": {
+    "es": "PENDING",
+    "en": "Pending"
+  },
+  "text.fc554d02b8": {
+    "es": "READY",
+    "en": "Ready"
+  },
+  "text.a29e4a4760": {
+    "es": "SERVED",
+    "en": "Served"
+  },
+  "text.5587b0afcc": {
+    "es": "CANCELLED",
+    "en": "Canceled"
+  },
+  "text.9af0a9c042": {
+    "es": "DINE_IN",
+    "en": "Dine-in"
+  },
+  "text.d8b4c27638": {
+    "es": "TAKEOUT",
+    "en": "Takeout"
+  },
+  "text.34d4e4c718": {
+    "es": "DELIVERY",
+    "en": "Delivery"
+  },
+  "text.4a9768fab0": {
+    "es": "FREE",
+    "en": "Free"
+  },
+  "text.dc884b0a74": {
+    "es": "OCCUPIED",
+    "en": "Occupied"
+  },
+  "text.044eabc219": {
+    "es": "RESERVED",
+    "en": "Reserved"
+  },
+  "text.b521caa6e1": {
+    "es": "ADMIN",
+    "en": "Administrator"
+  },
+  "text.0e6a0fe992": {
+    "es": "KITCHEN",
+    "en": "Kitchen"
+  },
+  "text.baa596bec4": {
+    "es": "WAITER",
+    "en": "Waiter"
+  },
+  "text.17efca6aa2": {
+    "es": "Hola! Quiero información o hacer un pedido 🍗🔥",
+    "en": "Hi! I would like information or to place an order 🍗🔥"
+  },
+  "text.a27856714b": {
+    "es": "Comandos disponibles:",
+    "en": "Available commands:"
+  },
+  "text.a31b6eb700": {
+    "es": "  curriculum  -> muestra el CV aquí",
+    "en": "  curriculum  -> display the résumé here"
+  },
+  "text.0b33c97909": {
+    "es": "  open        -> abre el CV en una pestaña nueva",
+    "en": "  open        -> open the résumé in a new tab"
+  },
+  "text.57ceb009c6": {
+    "es": "  download    -> descarga el CV",
+    "en": "  download    -> download the résumé"
+  },
+  "text.bbbb21f6a5": {
+    "es": "  clear       -> limpia la terminal",
+    "en": "  clear       -> clear the terminal"
+  },
+  "text.d3c02cdfe8": {
+    "es": "  help        -> muestra esta ayuda",
+    "en": "  help        -> display this help"
+  },
+  "text.90708b1574": {
+    "es": "Abriendo CV...",
+    "en": "Opening résumé..."
+  },
+  "text.9437fd14d6": {
+    "es": "Descargando CV...",
+    "en": "Downloading résumé..."
+  },
+  "text.c22c9f7e8b": {
+    "es": "hace unos segundos",
+    "en": "a few seconds ago"
+  },
+  "text.62749e5a53": {
+    "es": "hace 1 min",
+    "en": "1 minute ago"
+  },
+  "text.138c498c33": {
+    "es": "Completa los datos de entrega y agrega productos.",
+    "en": "Complete the delivery details and add products."
+  },
+  "text.ff00adf954": {
+    "es": "tunombre@email.com",
+    "en": "tunombre@email.com"
+  },
+  "text.a7f5c63f17": {
+    "es": "Simulación completada. No se envió ningún mensaje.",
+    "en": "Simulation completed. No message was sent."
+  },
+  "text.70f8bb9a8a": {
+    "es": "Inicio",
+    "en": "Home"
+  },
+  "text.e09212c7d3": {
+    "es": "Habilidades",
+    "en": "Skills"
+  },
+  "text.036b18f02a": {
+    "es": "Portafolio",
+    "en": "Portfolio"
+  },
+  "text.81a05566b3": {
+    "es": "Caso de estudio",
+    "en": "Case Study"
+  },
+  "text.c108c83a8f": {
+    "es": "Desarrollador Full Stack",
+    "en": "Full Stack Developer"
+  },
+  "text.1ab37bb1d1": {
+    "es": "Lenguajes de programación",
+    "en": "Programming Languages"
+  },
+  "text.4a84732290": {
+    "es": "Backend y frameworks",
+    "en": "Backend & Frameworks"
+  },
+  "text.43ca5f4981": {
+    "es": "Bases de datos y formatos",
+    "en": "Databases & Data Formats"
+  },
+  "text.9182865005": {
+    "es": "Nube, DevOps y sistemas",
+    "en": "Cloud, DevOps & Systems"
+  },
+  "text.8016ed39c8": {
+    "es": "Otras herramientas y conceptos",
+    "en": "Other Tools & Concepts"
+  },
+  "text.f16a8cf3e7": {
+    "es": "Desarrollador Full Stack · Enfoque en backend",
+    "en": "Full Stack Developer · Backend Focus"
+  },
+  "text.3c2a8144c2": {
+    "es": "· Creado con React y Vite",
+    "en": "· Built with React & Vite"
+  },
+  "text.ff88c7f616": {
+    "es": "Full Stack (enfoque en backend)",
+    "en": "Full Stack (Backend Focus)"
+  },
+  "text.a2b2f96037": {
+    "es": "Diseño adaptable y componentes de interfaz",
+    "en": "Responsive design + UI components"
+  },
+  "text.7a2ae0d0d2": {
+    "es": "Entrada de comandos",
+    "en": "Terminal command input"
+  },
+  "text.51f288d62a": {
+    "es": "CV en PDF",
+    "en": "Resume PDF"
+  },
+  "text.7422e96e38": {
+    "es": "Terminal vaciada.",
+    "en": "Terminal cleared."
+  },
+  "text.9cf2d21e98": {
+    "es": "EmilioOS v1.0 — Terminal lista.",
+    "en": "EmilioOS v1.0 — Terminal ready."
+  },
+  "text.8be3c943b1": {
+    "es": "Contraseña",
+    "en": "Password"
+  },
+  "text.35c80f9645": {
+    "es": "URL de imagen",
+    "en": "Image URL"
+  },
+  "text.a3e06177ca": {
+    "es": "Alitas y boneless",
+    "en": "Wings & Boneless"
+  },
+  "text.d87f47b47e": {
+    "es": "Resumen",
+    "en": "Dashboard"
+  },
+  "text.c0c3a27576": {
+    "es": "Comandos:",
+    "en": "Commands:"
+  },
+  "text.6d38bde033": {
+    "es": "curriculum - Muestra el CV en pantalla",
+    "en": "curriculum - Display the résumé on screen"
+  },
+  "text.26de87883d": {
+    "es": "open - Abre el CV en una nueva pestaña",
+    "en": "open - Open the résumé in a new tab"
+  },
+  "text.5151e1037e": {
+    "es": "download - Descarga el CV",
+    "en": "download - Download the résumé"
+  },
+  "text.13422fd4d7": {
+    "es": "clear - Limpia la terminal",
+    "en": "clear - Clear the terminal"
+  },
+  "text.295fab854e": {
+    "es": "Abriendo Resume-EmilioCastillo.pdf...",
+    "en": "Opening Resume-EmilioCastillo.pdf..."
+  },
+  "text.e83395fbb3": {
+    "es": "Abriendo CV en una nueva pestaña...",
+    "en": "Opening the résumé in a new tab..."
+  },
+  "ui.navigation": {
+    "es": "Abrir navegación",
+    "en": "Open navigation"
+  },
+  "text.8a3c344036": {
+    "es": "Todas",
+    "en": "All"
+  },
+  "text.60f92f2f9b": {
+    "es": "Documentación",
+    "en": "Documentation"
+  },
+  "text.e6b1962159": {
+    "es": "Realidad Virtual",
+    "en": "Virtual reality"
+  },
+  "text.03730f6829": {
+    "es": "Papel profesional",
+    "en": "Professional role"
+  },
+  "text.2cf35c7a37": {
+    "es": "Contribución personal pendiente de documentar.",
+    "en": "Personal contribution has not yet been documented."
+  },
+  "text.0e1f2e2603": {
+    "es": "Estado no documentado.",
+    "en": "Status has not yet been documented."
+  },
+  "ui.validation": {
+    "es": "Revisa los campos obligatorios y el formato del correo.",
+    "en": "Check the required fields and the email format."
+  },
+  "cart.open": {
+    "es": "Abrir carrito: {count} productos",
+    "en": "Open cart: {count} products"
+  }
+}

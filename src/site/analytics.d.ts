@@ -1,0 +1,1 @@
+export function track(type: 'page_view' | 'form_start' | 'form_submit_attempt' | 'form_validation_error' | 'form_submit_success' | 'form_submit_error', formId?: string, code?: 'validation' | 'network' | 'service' | 'configuration'): void;

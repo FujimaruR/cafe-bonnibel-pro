@@ -1,3 +1,4 @@
+import { useLocale as useSiteLocale, money as formatMoney, t as tr, text as localizeText } from '../site/locale';
 import menu from '../data/menu.json';
 import { Link } from 'react-router-dom';
 
@@ -9,19 +10,20 @@ const slug = s =>
    .replace(/(^-|-$)/g, '');
 
 export default function MenuGrid() {
-  
+  useSiteLocale();
+
   // relación sección → tab
   const map = { 0: 'calientes', 1: 'frias', 2: 'pan' };
 
   return (
     <section id="menu" className="py-16 md:py-20 bg-beige">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="font-serif text-3xl md:text-4xl text-cafe mb-8">Nuestro menú</h2>
+        <h2 className="font-serif text-3xl md:text-4xl text-cafe mb-8">{tr("text.c7c06e9fff")}</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {menu.sections.map((sec, si) => (
             <div key={sec.title} className="bg-crema rounded-2xl p-5 border border-beige/70 shadow-sm">
-              <h3 className="font-serif text-2xl text-cafe mb-4">{sec.title}</h3>
+              <h3 className="font-serif text-2xl text-cafe mb-4">{localizeText(sec.title)}</h3>
 
               <ul className="space-y-3">
                 {sec.items.map((it) => (
@@ -32,13 +34,13 @@ export default function MenuGrid() {
                         to={`/menu?tab=${map[si]}&item=${slug(it.name)}`}
                         className="text-cafe font-medium hover:underline"
                       >
-                        {it.name}
+                        {localizeText(it.name)}
                       </Link>
 
-                      <p className="text-sm text-cafe/70">{it.desc}</p>
+                      <p className="text-sm text-cafe/70">{localizeText(it.desc)}</p>
                     </div>
 
-                    <span className="text-cafe/80 font-semibold">${it.price}</span>
+                    <span className="text-cafe/80 font-semibold">{formatMoney(it.price)}</span>
                   </li>
                 ))}
               </ul>

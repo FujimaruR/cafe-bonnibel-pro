@@ -1,0 +1,4 @@
+.locale-tools { position: fixed; bottom: 1rem; left: 1rem; z-index: 100; display:flex; align-items:center; gap:.5rem; padding:.6rem .8rem; border:1px solid #c4b9a6; border-radius:1rem; background:#fffaf0; color:#30241a; box-shadow:0 3px 12px #0002; font: 14px system-ui,sans-serif; }
+.locale-tools select { background:#fff; color:#30241a; border:1px solid #76634c; border-radius:.4rem; padding:.3rem; }
+:focus-visible { outline:3px solid #92691e; outline-offset:3px; }
+@media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }

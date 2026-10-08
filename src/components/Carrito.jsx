@@ -1,8 +1,11 @@
+import { track } from '../site/analytics';
+import { useLocale as useSiteLocale, t as tr, text as localizeText } from '../site/locale';
 import { useCart } from '../store/cart';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function CartComponent() {
+  useSiteLocale();
     const { items, increase, decrease, remove, clear, subtotal } = useCart();
     const navigate = useNavigate();
 
@@ -12,7 +15,7 @@ export default function CartComponent() {
 
     // Helpers
     const formatMXN = (n) =>
-        new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 2 }).format(n);
+        new Intl.NumberFormat(document.documentElement.lang === 'en' ? 'en-US' : 'es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 2 }).format(n);
 
     // Totales
     const sub = subtotal();
@@ -30,6 +33,10 @@ export default function CartComponent() {
     // MP directo si es pickup
     const handlePayNowPickup = async () => {
         try {
+            if (loading) return;
+            track('form_start','pickup-order');
+            track('form_submit_attempt','pickup-order');
+            if (!items.length) { track('form_validation_error','pickup-order','validation'); return; }
             setLoading(true);
             const resp = await fetch(`${FUNCTIONS_BASE}/order-create`, {
                 method: 'POST',
@@ -50,15 +57,16 @@ export default function CartComponent() {
                 })
             });
             const data = await resp.json();
-            if (data?.init_point) {
+            if (resp.ok && data?.init_point) {
+                track('form_submit_success','pickup-order');
                 window.location.href = data.init_point; // redirige al checkout de MP
             } else {
-                alert('No se pudo iniciar el pago con Mercado Pago.');
-                console.error('order-create response:', data);
+                alert(tr("text.9d916f441b"));
+                track('form_submit_error','pickup-order','service');
             }
-        } catch (e) {
-            console.error(e);
-            alert('Error al iniciar pago.');
+        } catch {
+            track('form_submit_error','pickup-order','network');
+            alert(tr("text.2ea49ec636"));
         } finally {
             setLoading(false);
         }
@@ -67,14 +75,12 @@ export default function CartComponent() {
     return (
         <section className="pt-28 md:pt-36 bg-beige/30 min-h-screen">
             <div className="max-w-6xl mx-auto px-4 py-10">
-                <h1 className="font-serif text-4xl text-cafe mb-6">Tu carrito</h1>
+                <h1 className="font-serif text-4xl text-cafe mb-6">{tr("text.a7349b7cad")}</h1>
 
                 {items.length === 0 ? (
                     <div className="bg-crema p-6 rounded-2xl border border-beige/70">
-                        <p className="text-cafe/80">Aún no has agregado productos.</p>
-                        <button onClick={() => navigate('/menu')} className="mt-4 px-4 py-2 rounded-xl bg-cafe text-crema">
-                            Ver menú
-                        </button>
+                        <p className="text-cafe/80">{tr("text.2fb3ff8daa")}</p>
+                        <button onClick={() => navigate('/menu')} className="mt-4 px-4 py-2 rounded-xl bg-cafe text-crema"> {tr("text.34d6aa1522")} </button>
                     </div>
                 ) : (
                     <div className="grid md:grid-cols-3 gap-6">
@@ -99,14 +105,14 @@ export default function CartComponent() {
 
                                     {/* Info */}
                                     <div className="min-w-0">
-                                        <p className="text-cafe font-medium truncate md:truncate-0">{p.name}</p>
-                                        <p className="text-cafe/70 text-sm">{formatMXN(p.price)} c/u</p>
+                                        <p className="text-cafe font-medium truncate md:truncate-0">{localizeText(p.name)}</p>
+                                        <p className="text-cafe/70 text-sm">{formatMXN(p.price)} {tr("text.707b8df477")}</p>
                                     </div>
 
                                     {/* Controles */}
                                     <div className="flex items-center gap-2 col-start-2">
                                         <button onClick={() => decrease(p.name)} className="w-8 h-8 text-crema rounded border">–</button>
-                                        <span className="w-8 text-center">{p.qty}</span>
+                                        <span className="w-8 text-center">{localizeText(p.qty)}</span>
                                         <button onClick={() => increase(p.name)} className="w-8 h-8 text-crema rounded border">+</button>
                                     </div>
 
@@ -119,9 +125,7 @@ export default function CartComponent() {
                                     <button
                                         onClick={() => remove(p.name)}
                                         className="hidden md:inline text-crema text-sm"
-                                    >
-                                        Quitar
-                                    </button>
+                                    > {tr("text.be78bcf6d4")} </button>
 
                                     {/* --- MÓVIL: total + quitar debajo de los controles --- */}
                                     <div className="md:hidden col-start-2 flex items-center justify-between w-full">
@@ -129,25 +133,21 @@ export default function CartComponent() {
                                         <button
                                             onClick={() => remove(p.name)}
                                             className="text-crema text-sm"
-                                        >
-                                            Quitar
-                                        </button>
+                                        > {tr("text.be78bcf6d4")} </button>
                                     </div>
                                 </div>
 
                             ))}
-                            <button onClick={clear} className="text-sm text-crema">
-                                Vaciar carrito
-                            </button>
+                            <button onClick={clear} className="text-sm text-crema"> {tr("text.4718b2bda9")} </button>
                         </div>
 
                         {/* Resumen */}
                         <aside className="bg-crema p-5 rounded-2xl border border-beige/70 h-max space-y-4">
-                            <h2 className="font-serif text-2xl text-cafe">Resumen</h2>
+                            <h2 className="font-serif text-2xl text-cafe">{tr("text.35414e5322")}</h2>
 
                             {/* Selector envío / pickup */}
                             <div className="space-y-2">
-                                <p className="text-cafe/80 font-medium">¿Cómo lo quieres?</p>
+                                <p className="text-cafe/80 font-medium">{tr("text.62b2db5e67")}</p>
 
                                 {/* Color del check: intentamos con Tailwind accent y dejamos fallback con style */}
                                 <label className="flex items-center gap-2">
@@ -160,7 +160,7 @@ export default function CartComponent() {
                                         className="accent-cafe"
                                         style={{ accentColor: 'var(--color-cafe)' }} // fallback si 'accent-cafe' no existe
                                     />
-                                    <span className="text-cafe/80">Envío a domicilio</span>
+                                    <span className="text-cafe/80">{tr("text.fd86fa3241")}</span>
                                 </label>
 
                                 <label className="flex items-center gap-2">
@@ -173,30 +173,27 @@ export default function CartComponent() {
                                         className="accent-cafe"
                                         style={{ accentColor: 'var(--color-cafe)' }}
                                     />
-                                    <span className="text-cafe/80">Recoger en tienda</span>
+                                    <span className="text-cafe/80">{tr("text.65e618348b")}</span>
                                 </label>
 
                                 {fulfillment === 'pickup' && (
                                     <div className="mt-2 text-sm rounded-xl border border-beige/70 p-3 bg-beige/20">
-                                        <p className="text-cafe/80">
-                                            Recoge en: <span className="font-medium">Av. Dulce #123, Col. Encanto, Monterrey</span>. Te
-                                            avisaremos cuando esté listo.
-                                        </p>
+                                        <p className="text-cafe/80"> {tr("text.e47d5b93f3")} <span className="font-medium">{tr("text.a337bd4f46")}</span>{tr("text.27b6e17400")} </p>
                                     </div>
                                 )}
                             </div>
 
                             {/* Totales */}
                             <div className="flex justify-between text-cafe/80">
-                                <span>Subtotal</span>
+                                <span>{tr("text.97f7359ed8")}</span>
                                 <span>{formatMXN(sub)}</span>
                             </div>
                             <div className="flex justify-between text-cafe/80">
-                                <span>Envío</span>
-                                <span>{fulfillment === 'pickup' ? 'No aplica' : 'Se calcula en checkout'}</span>
+                                <span>{tr("text.3bc2689ca4")}</span>
+                                <span>{localizeText(fulfillment === 'pickup' ? 'No aplica' : 'Se calcula en checkout')}</span>
                             </div>
                             <div className="flex justify-between text-cafe font-semibold text-lg">
-                                <span>Total</span>
+                                <span>{tr("text.b25928c699")}</span>
                                 <span>{formatMXN(grandTotal)}</span>
                             </div>
 
@@ -207,15 +204,13 @@ export default function CartComponent() {
                                     disabled={loading || items.length === 0}
                                     className="w-full px-4 py-3 rounded-xl bg-cafe text-crema disabled:opacity-50"
                                 >
-                                    {loading ? 'Creando pago…' : 'Pagar con Mercado Pago'}
+                                    {localizeText(loading ? 'Creando pago…' : 'Pagar con Mercado Pago')}
                                 </button>
                             ) : (
                                 <button
                                     onClick={goCheckout}
                                     className="w-full px-4 py-3 rounded-xl bg-cafe text-crema"
-                                >
-                                    Continuar al pago
-                                </button>
+                                > {tr("text.4da14ab3af")} </button>
                             )}
                         </aside>
                     </div>

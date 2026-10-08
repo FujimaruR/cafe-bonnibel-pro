@@ -1,3 +1,4 @@
+import { useLocale as useSiteLocale, money as formatMoney, t as tr, text as localizeText } from '../site/locale';
 import menu from '../data/menu.json';
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
@@ -17,6 +18,7 @@ const slug = (s) =>
     .replace(/(^-|-$)/g, '');
 
 export default function MenuPage() {
+  useSiteLocale();
   const [search, setSearch] = useSearchParams();
   const location = useLocation();
   const { add } = useCart();
@@ -56,7 +58,7 @@ export default function MenuPage() {
   return (
     <section className="pt-28 md:pt-36 bg-beige/30 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <h1 className="font-serif text-4xl text-cafe mb-6">Menú</h1>
+        <h1 className="font-serif text-4xl text-cafe mb-6">{tr("text.17ea0a188c")}</h1>
 
         {/* Tabs */}
         <div className="flex flex-wrap gap-2 mb-6">
@@ -72,7 +74,7 @@ export default function MenuPage() {
                 ? 'bg-cafe text-crema border-cafe'
                 : 'border-beige/70 text-cafe/80 hover:text-cafe'}`}
             >
-              {t.label}
+              {localizeText(t.label)}
             </button>
           ))}
         </div>
@@ -91,16 +93,14 @@ export default function MenuPage() {
               />
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-cafe font-semibold">{it.name}</h3>
-                  <p className="text-sm text-cafe/70">{it.desc}</p>
+                  <h3 className="text-cafe font-semibold">{localizeText(it.name)}</h3>
+                  <p className="text-sm text-cafe/70">{localizeText(it.desc)}</p>
                 </div>
-                <span className="text-cafe/90 font-bold">${it.price}</span>
+                <span className="text-cafe/90 font-bold">{formatMoney(it.price)}</span>
                 <button
                   onClick={() => add(it)}
                   className="mt-3 px-3 py-1 rounded-lg bg-cafe text-crema hover:opacity-90"
-                >
-                  Agregar
-                </button>
+                > {tr("text.87ebeeddda")} </button>
               </div>
             </article>
           ))}
